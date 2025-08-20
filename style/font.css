@@ -1,0 +1,28 @@
+/* icomoon图标 */
+@font-face {
+    font-family: 'icomoon';
+    src: url('fonts/icomoon.eot?vivftn');
+    src: url('fonts/icomoon.eot?vivftn#iefix') format('embedded-opentype'),
+        url('fonts/icomoon.ttf?vivftn') format('truetype'),
+        url('fonts/icomoon.woff?vivftn') format('woff'),
+        url('fonts/icomoon.svg?vivftn#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+/* 图标 */
+#qq_icon,
+#qqEmil_icon,
+#github_icon,
+#home_icon,
+#smile_icon,
+#return_icon,
+#education_icon,
+#close_icon,
+#music_icon,
+#tool_icon,
+#stars_icon,
+#close {
+    font-style: normal;
+}

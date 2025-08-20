@@ -1,0 +1,207 @@
+/* 初始化 */
+body {
+    font-size: 16px;
+    font-family: "SourceSansPro-Regular", "微软雅黑", 'icomoon';
+    color: #000;
+    -webkit-text-size-adjust: none;
+    text-align: center;
+}
+
+/* 固定背景 */
+body {
+    background-image: url(../image/bg_house.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+li {
+    list-style: none;
+}
+
+/* 变量 */
+:root {
+    /* 缩放比例  */
+    --pop_up_scale: 1;
+}
+
+/* 弹窗 */
+.pop_up {
+    position: fixed;
+    left: 50%;
+    margin-left: calc(-600px * var(--pop_up_scale) * 0.5);
+    top: 50%;
+    margin-top: calc(-468px * var(--pop_up_scale) * 0.5);
+
+    /* var(--pop_up_scale)为缩放比例 */
+    height: calc(468px * var(--pop_up_scale));
+    width: calc(600px * var(--pop_up_scale));
+
+    background-color: transparent;
+    background-image: url(../image/pop_up_window.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    /* border: 3px solid black; */
+
+    z-index: 3;
+}
+
+
+/* 第一大块 */
+.block1 {
+    position: relative;
+    height: 300px;
+    width: 1000px;
+    margin: 0 auto 100px;
+
+    border-radius: 0 0 100px 100px;
+
+    background-image: url(../image/bg_image.jpg);
+    background-size: cover;
+}
+
+.circle {
+    position: absolute;
+    top: 80px;
+    left: 50%;
+    margin-left: -50px;
+
+    height: 100px;
+    width: 100px;
+    border-radius: 50px;
+    background-color: #ffffff;
+
+    transition: all 0.5s;
+}
+
+.circle:hover {
+    height: 200px;
+    width: 200px;
+    margin-left: -100px;
+    border-radius: 100px;
+    background-color: #ffe058;
+}
+
+/* 衔接处 --待重做！！！ */
+.connect {
+    position: absolute;
+    bottom: -200px;
+    left: 50%;
+    margin-left: -700px;
+
+    /* border: 3px solid yellow; */
+
+    height: 600px;
+    width: 1400px;
+
+    background-image: url(../image/connect1-2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0px -227px;
+
+    z-index: 2;
+
+    1
+}
+
+/* 第二大块 */
+.block2 {
+    position: relative;
+
+    width: 1200px;
+    height: 600px;
+    margin: 0 auto;
+    margin-top: 200px;
+
+    border-radius: 100px 100px 0 0;
+
+    background-color: pink;
+    background-image: url(../image/book.webp);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.house {
+    float: right;
+
+    height: 600px;
+    width: 300px;
+    background-color: transparent;
+    border-radius: 0 100px 0 0;
+
+    color: black;
+    text-align: center;
+    line-height: 600px;
+    font-size: 36px;
+
+    transition: all 0.5s;
+}
+
+.house:hover {
+    color: rgb(68, 255, 0);
+    background-color: rgba(0, 0, 0, .5);
+}
+
+
+.announcement {
+    position: absolute;
+    left: 50px;
+    bottom: 50px;
+}
+
+/* 尾页 */
+.footer {
+    position: relative;
+
+    width: 1200px;
+    margin: 0 auto;
+    border-radius: 0 0 50px 50px;
+
+    background-color: rgb(83, 83, 83);
+    color: white;
+
+    line-height: 25px;
+}
+
+/* 清除浮动 */
+.footer::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.footer>ul {
+    display: inline-block;
+    margin: 0 auto;
+}
+
+.footer_textbox {
+    float: left;
+    width: auto;
+    height: 100%;
+    margin: 0 15px;
+    margin-bottom: 25px;
+    text-align: left;
+}
+
+/* 源代码 */
+.footer .footer_textbox a {
+    transition: all 0.5s;
+    color: white;
+}
+
+.footer .footer_textbox a:hover {
+    font-size: 24px;
+    color: rgb(11, 255, 72);
+}

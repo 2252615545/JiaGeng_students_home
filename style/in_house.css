@@ -1,0 +1,238 @@
+/* 图标 */
+#education_icon {
+    color: rgb(40, 120, 241);
+}
+
+#tool_icon {
+    color: rgb(148, 148, 148);
+}
+
+#music_icon {
+    color: rgb(44, 76, 255);
+}
+
+#stars_icon {
+    color: rgb(183, 255, 1);
+    font-size: 40px;
+}
+
+/* 初始化 */
+body {
+    font-size: 16px;
+    font-family: "SourceSansPro-Regular", "微软雅黑", 'icomoon';
+    color: white;
+    -webkit-text-size-adjust: none;
+    text-align: center;
+}
+
+/* 固定背景 */
+body {
+    background-image: url(../image/bg_house.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* 丝滑跳转 */
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+li {
+    list-style: none;
+}
+
+/* 变量 */
+/* :root {
+    --classification_height: 10px;
+} */
+
+
+/* 第一大块 */
+.block1 {
+    position: relative;
+    display: inline-table;
+
+    height: auto;
+    width: 1000px;
+    margin: 100px auto 0px;
+    border-radius: 50px;
+
+    background-color: rgba(0, 0, 0, .5);
+
+}
+
+/* 清除浮动 */
+.block1::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* ----左侧固定导航栏 */
+.leftnav {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+
+    width: 20%;
+    height: 90%;
+    border-radius: 30px;
+
+
+    /* border: 1px solid black; */
+
+    background-color: rgba(255, 100, 242, 0.5);
+}
+
+.leftnav>ul {
+    position: sticky;
+    top: 75px;
+
+    border-radius: 30px;
+
+    /* border: 1px solid rgb(0, 0, 0); */
+
+    overflow: hidden;
+}
+
+/* 清除浮动 */
+.leftnav>ul::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.leftnav ul>a {
+    float: left;
+
+    width: 100%;
+    height: 55px;
+    text-align: left;
+    text-indent: 0.5em;
+    line-height: 55px;
+
+    font-size: 24px;
+    border-bottom: 2px dashed rgb(0, 0, 0);
+
+    background-color: pink;
+
+    transition: all 0.5s;
+}
+
+.leftnav ul>a:hover {
+    padding: 20px 0;
+    background-color: #fff;
+}
+
+/* ----右边内容部分 */
+.middle {
+    float: right;
+
+    width: 65%;
+    height: auto;
+    margin: 5%;
+
+    background-color: transparent;
+
+
+}
+
+/* 清除浮动 */
+.middle:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.middle>.classification {
+    float: left;
+    width: 90%;
+    height: auto;
+    margin-bottom: 15px;
+    text-align: left;
+    line-height: 2em;
+
+    border-radius: 15px;
+    border-bottom: 3px dotted rgb(255, 255, 255);
+}
+
+.middle .classification>.title {
+    display: inline-block;
+
+    font-style: normal;
+    font-size: 32px;
+    text-indent: 1em;
+
+    padding: 10px 0;
+    padding-right: 1em;
+
+    border-radius: 15px;
+
+    background-color: black;
+}
+
+.middle .classification>a {
+    float: left;
+
+    width: 17%;
+    height: 125px;
+    margin: 15px;
+    padding: 10px 0;
+
+    color: white;
+    background-color: transparent;
+
+    transition: all 0.5s;
+
+    /* border: 1px solid black; */
+}
+
+.middle .classification>a:hover {
+    padding: 10px 25px;
+
+    background-color: rgba(255, 255, 255, 0.25);
+}
+
+.middle .classification>a>.image {
+    display: block;
+    width: 50px;
+    height: 40%;
+    margin: 0 auto;
+    border-radius: 40%;
+
+    /* background-color: #fff; */
+    /* border: 1px solid black; */
+}
+
+.middle .classification>a>.describe {
+    height: auto;
+
+    font-size: 20px;
+    text-align: center;
+}
+
+
+/* 页尾 */
+.footer {
+    width: 1000px;
+    height: 700px;
+    margin: 10px auto;
+
+    text-align: center;
+    line-height: 300px;
+
+    font-size: 50px;
+
+    transition: all 0.5s;
+}

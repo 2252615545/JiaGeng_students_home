@@ -1,0 +1,61 @@
+/* 头顶栏 */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 3;
+
+    height: 50px;
+    width: 90%;
+    margin: 0 5%;
+    border-radius: 0 0 25px 25px;
+    background-color: rgba(0, 0, 0, .5);
+
+    line-height: 50px;
+    font-size: 20px;
+
+    transition: all 0.5s;
+}
+
+.header a {
+    color: white;
+}
+
+.header:hover {
+    height: 65px;
+    border-radius: 0 0 50px 50px;
+}
+
+/* logo- */
+.logo {
+    float: left;
+    height: 100%;
+    width: 300px;
+    background-color: transparent;
+}
+
+/* 导航栏 */
+.nav {
+    position: absolute;
+    right: 5%;
+    top: 0;
+}
+
+.header .nav>li {
+    float: right;
+    margin-left: 25px;
+    text-align: center;
+
+    transition: all 0.5s;
+}
+
+.header .nav>li:hover {
+    padding-top: 15px;
+    font-size: 30px;
+}
+
+.header .nav>li>a:hover {
+    color: #ffb049;
+    text-decoration: underline dashed rgb(20, 165, 255);
+
+}
