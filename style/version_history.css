@@ -1,0 +1,73 @@
+/* 图标 */
+#stars_icon {
+    color: rgb(183, 255, 1);
+    font-size: 40px;
+}
+
+/* 初始化 */
+body {
+    font-size: 16px;
+    font-family: "SourceSansPro-Regular", "微软雅黑", 'icomoon';
+    color: white;
+    -webkit-text-size-adjust: none;
+    text-align: center;
+}
+
+/* 固定背景 */
+body {
+    background-image: url(../image/bg_house.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+li {
+    list-style: none;
+}
+
+/* 第一大块 */
+.block1 {
+    position: relative;
+    display: inline-table;
+
+    height: auto;
+    width: 1000px;
+    margin: 100px auto 0;
+    padding: 1em 0 5em 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-radius: 50px;
+
+    background-color: rgba(0, 0, 0, .5);
+
+}
+
+.block1 .title1 {
+    font-size: 48px;
+    color: rgb(255, 34, 0);
+}
+
+.block1 .version {
+    font-size: 36px;
+    color: rgb(26, 255, 0);
+    text-align: left;
+    text-indent: 0.5em;
+}
+
+.block1 .description {
+    font-size: 24px;
+    color: rgb(255, 255, 255);
+    text-align: left;
+    text-indent: 2em;
+}

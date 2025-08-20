@@ -79,6 +79,14 @@ li {
     clear: both;
 }
 
+/* 免责声明  */
+.top {
+    width: 1200px;
+    line-height: 2em;
+
+    font-size: 24px;
+}
+
 /* ----左侧固定导航栏 */
 .leftnav {
     position: absolute;
@@ -227,12 +235,24 @@ li {
 .footer {
     width: 1000px;
     height: 700px;
-    margin: 10px auto;
-
-    text-align: center;
-    line-height: 300px;
+    margin: 0 auto;
 
     font-size: 50px;
 
     transition: all 0.5s;
+}
+
+.footer p {
+    display: inline-block;
+
+    margin: 25px auto 0px;
+
+    cursor: default;
+
+    transition: all 0.5s;
+}
+
+.footer p:hover {
+    font-size: 100px;
+    color: rgb(13, 255, 0);
 }

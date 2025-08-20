@@ -32,6 +32,9 @@
     height: 100%;
     width: 300px;
     background-color: transparent;
+    /* background-image: url(../image/school.webp);
+    background-size: contain;
+    background-repeat: no-repeat; */
 }
 
 /* 导航栏 */
